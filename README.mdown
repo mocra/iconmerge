@@ -4,6 +4,8 @@ http://mocra.com/projects/iconmerge
 
 Creates a composition image/icon file where the second image becomes a thumbnail overlay on top of the first.
 
+<div class="thumbnail"><a href="http://skitch.com/drnic/bdagi/coming-soon-iconmerge"><img src="http://img.skitch.com/20090207-emn72965qpe2xe7kidkc1xesuq.preview.jpg" alt="Coming soon: IconMerge" /></a></div>
+
 The resulting image can be saved as a .icns file or applied directly to a bundle's own icon.
 
 For example, the original purpose was to create project-specific Xcode project icons. The 
