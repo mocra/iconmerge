@@ -1,0 +1,6 @@
+build
+*.mode1v3
+*.pbxuser
+.DS_Store
+Icon?
+dsa_priv.pem
