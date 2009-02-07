@@ -3,7 +3,7 @@
 //  iConMerge
 //
 //  Created by Daniel Leping on 1/31/09.
-//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//  Copyright 2009 Mocra. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>

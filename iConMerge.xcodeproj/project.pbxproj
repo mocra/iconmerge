@@ -62,6 +62,14 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				650762160F362317000CD13A /* NSMainMenuController.h */,
+				650762170F362317000CD13A /* NSMainMenuController.m */,
+				65DFB5CD0F363A1600AEECA9 /* NSSaveableImageView.h */,
+				65DFB5CE0F363A1600AEECA9 /* NSSaveableImageView.m */,
+				65DB35DD0F39F76D000BAE44 /* NSICMApplication.h */,
+				65DB35DE0F39F76D000BAE44 /* NSICMApplication.m */,
+				650762120F3622B3000CD13A /* NSAnyImageView.h */,
+				650762130F3622B3000CD13A /* NSAnyImageView.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -109,16 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				65DB35510F39155F000BAE44 /* IconFamily */,
-				650762120F3622B3000CD13A /* NSAnyImageView.h */,
-				650762130F3622B3000CD13A /* NSAnyImageView.m */,
 				32CA4F630368D1EE00C91783 /* iConMerge_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
-				650762160F362317000CD13A /* NSMainMenuController.h */,
-				650762170F362317000CD13A /* NSMainMenuController.m */,
-				65DFB5CD0F363A1600AEECA9 /* NSSaveableImageView.h */,
-				65DFB5CE0F363A1600AEECA9 /* NSSaveableImageView.m */,
-				65DB35DD0F39F76D000BAE44 /* NSICMApplication.h */,
-				65DB35DE0F39F76D000BAE44 /* NSICMApplication.m */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
