@@ -1,0 +1,20 @@
+= iConMerge
+
+http://mocra.com/projects/iconmerge
+
+Creates a composition image/icon file where the second image becomes a thumbnail overlay on top of the first.
+
+The resulting image can be saved as a .icns file or applied directly to a bundle's own icon.
+
+For example, the original purpose was to create project-specific Xcode project icons. The 
+Xcode project icon would be the main icon image, and the project's own icon would be the 
+thumbnail. That way you could tell what each Xcode project was for by its thumbnail.
+
+== Authors
+
+* Daniel Leping, oneclickdev on elance.com
+* [Dr Nic Williams](http://drnicwilliams.com)
+
+== Sponsored by
+
+* [Mocra](http://mocra.com)
