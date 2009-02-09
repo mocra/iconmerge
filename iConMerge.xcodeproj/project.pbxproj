@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		31D311E50F4036D000FE0310 /* iconmerge.icns in Resources */ = {isa = PBXBuildFile; fileRef = 31D311E40F4036D000FE0310 /* iconmerge.icns */; };
+		31D8626A0F404ECC0006B202 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31D862690F404ECC0006B202 /* Sparkle.framework */; };
+		31D8626E0F404EEA0006B202 /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 31D862690F404ECC0006B202 /* Sparkle.framework */; };
+		31D8628D0F404F2F0006B202 /* Rakefile in Resources */ = {isa = PBXBuildFile; fileRef = 31D8628A0F404F2F0006B202 /* Rakefile */; };
+		31D8628E0F404F2F0006B202 /* release_notes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 31D8628B0F404F2F0006B202 /* release_notes.txt */; };
+		31D8628F0F404F2F0006B202 /* release_notes_template.html.erb in Resources */ = {isa = PBXBuildFile; fileRef = 31D8628C0F404F2F0006B202 /* release_notes_template.html.erb */; };
+		31D862910F404FAF0006B202 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 31D862900F404FAF0006B202 /* dsa_pub.pem */; };
 		650762140F3622B3000CD13A /* NSAnyImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 650762130F3622B3000CD13A /* NSAnyImageView.m */; };
 		650762180F362317000CD13A /* NSMainMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650762170F362317000CD13A /* NSMainMenuController.m */; };
 		65DB35540F3915A3000BAE44 /* IconFamily.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DB35530F3915A3000BAE44 /* IconFamily.m */; };
@@ -21,6 +27,20 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		31D862890F404F0B0006B202 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				31D8626E0F404EEA0006B202 /* Sparkle.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
@@ -31,6 +51,11 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		318DFC280F3E2E67002D5873 /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.mdown; sourceTree = "<group>"; };
 		31D311E40F4036D000FE0310 /* iconmerge.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = iconmerge.icns; sourceTree = "<group>"; };
+		31D862690F404ECC0006B202 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = "../frameworks/Sparkle 1.5b6/Sparkle.framework"; sourceTree = SOURCE_ROOT; };
+		31D8628A0F404F2F0006B202 /* Rakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
+		31D8628B0F404F2F0006B202 /* release_notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.txt; sourceTree = "<group>"; };
+		31D8628C0F404F2F0006B202 /* release_notes_template.html.erb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes_template.html.erb; sourceTree = "<group>"; };
+		31D862900F404FAF0006B202 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* iConMerge_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iConMerge_Prefix.pch; sourceTree = "<group>"; };
 		650762120F3622B3000CD13A /* NSAnyImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSAnyImageView.h; sourceTree = "<group>"; };
 		650762130F3622B3000CD13A /* NSAnyImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSAnyImageView.m; sourceTree = "<group>"; };
@@ -56,6 +81,7 @@
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				65DB35750F39184E000BAE44 /* Carbon.framework in Frameworks */,
+				31D8626A0F404ECC0006B202 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +106,7 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				31D862690F404ECC0006B202 /* Sparkle.framework */,
 				65DB35740F39184E000BAE44 /* Carbon.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 			);
@@ -129,6 +156,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				31D862900F404FAF0006B202 /* dsa_pub.pem */,
+				31D8628A0F404F2F0006B202 /* Rakefile */,
+				31D8628B0F404F2F0006B202 /* release_notes.txt */,
+				31D8628C0F404F2F0006B202 /* release_notes_template.html.erb */,
 				31D311E40F4036D000FE0310 /* iconmerge.icns */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -168,6 +199,7 @@
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
+				31D862890F404F0B0006B202 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -204,6 +236,10 @@
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				31D311E50F4036D000FE0310 /* iconmerge.icns in Resources */,
+				31D8628D0F404F2F0006B202 /* Rakefile in Resources */,
+				31D8628E0F404F2F0006B202 /* release_notes.txt in Resources */,
+				31D8628F0F404F2F0006B202 /* release_notes_template.html.erb in Resources */,
+				31D862910F404FAF0006B202 /* dsa_pub.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +287,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../frameworks/Sparkle 1.5b6\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -268,6 +308,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../frameworks/Sparkle 1.5b6\"",
+				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iConMerge_Prefix.pch;
