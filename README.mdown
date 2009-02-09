@@ -6,7 +6,9 @@ Creates a composition image/icon file where the second image becomes a thumbnail
 
 <div class="thumbnail"><a href="http://skitch.com/drnic/bdagi/coming-soon-iconmerge"><img src="http://img.skitch.com/20090207-emn72965qpe2xe7kidkc1xesuq.preview.jpg" alt="Coming soon: IconMerge" /></a></div>
 
-The resulting image can be saved as a .icns file or applied directly to a bundle's own icon.
+The resulting image can be saved as a .icns file or applied directly to a bundle's own icon. For example, below is the result of using iConMerge on upon its own Xcode project's icon:
+
+<div class="thumbnail"><a href="http://skitch.com/drnic/brbe3/iconmerge-icon-used-for-its-own-project"><img src="http://img.skitch.com/20090209-jcw3x34q39auxpng7341wt9g46.preview.jpg" alt="iConMerge icon used for its own project" /></a></div>
 
 For example, the original purpose was to create project-specific Xcode project icons. The 
 Xcode project icon would be the main icon image, and the project's own icon would be the 
