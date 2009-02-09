@@ -1,6 +1,6 @@
 # iConMerge
 
-http://mocra.com/projects/iconmerge
+[home](http://mocra.com/projects/iconmerge) | [download](http://mocra.com/project_downloads/iconmerge) | [source](http://github.com/mocra/iconmerge)
 
 Creates a composition image/icon file where the second image becomes a thumbnail overlay on top of the first.
 
