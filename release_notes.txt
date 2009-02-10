@@ -1,3 +1,9 @@
+h1. <span>2009-02-10</span> Release 0.2.0
+
+h2. Clean up menu items
+
+Only one Open... menu item that assigns the image to the next image slot.
+
 h1. <span>2009-02-09</span> Release 0.1.0
 
 h2. Initial release

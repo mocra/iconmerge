@@ -33,9 +33,7 @@
 		dragAcceptedByParent = YES;
 		return dragOperation;
 	}
-    if ((NSDragOperationCopy & [sender draggingSourceOperationMask]) 
-		== NSDragOperationCopy)
-    {
+  if ((NSDragOperationCopy & [sender draggingSourceOperationMask]) == NSDragOperationCopy) {
 		dragAcceptedByParent = NO;
 		return [[NSArray arrayWithObjects: NSFilenamesPboardType, nil] count] == 1 ? NSDragOperationCopy : NSDragOperationNone;
 		
