@@ -18,6 +18,8 @@
 	IBOutlet NSMenuItem* menuItemOpenOverlay;
 	IBOutlet NSMenuItem* menuItemSaveICNS;
 	IBOutlet NSMenuItem* menuItemSaveCI;
+
+	NSAnyImageView* _lastOpenedImageView;
 }
 
 - (IBAction) swapAction:sender;
@@ -25,5 +27,7 @@
 - (IBAction) openAction:sender;
 - (IBAction) saveAction:sender;
 - (IBAction) windowClose:sender;
+
+@property (nonatomic, retain) NSAnyImageView *lastOpenedImageView;
 
 @end

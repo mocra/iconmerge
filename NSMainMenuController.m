@@ -14,6 +14,8 @@
 
 @implementation NSMainMenuController
 
+@synthesize lastOpenedImageView=_lastOpenedImageView;
+
 - (IBAction) swapAction:sender {
 	NSImage* image = imageView1.image;
 	imageView1.image = imageView2.image;
@@ -49,9 +51,17 @@
 - (IBAction) openAction:sender {
 	NSOpenPanel* panel = [NSOpenPanel openPanel];
 	if( [panel runModalForTypes:nil] == NSOKButton ) {
-		if( [(sender == menuItemOpenMain ? imageView1 : imageView2 ) loadFile:[panel filename]] ) {
-			[self mergeAction:sender];
-		}
+    BOOL success = FALSE;
+    if (self.lastOpenedImageView == imageView1) {
+      success = [imageView2 loadFile:[panel filename]];
+      self.lastOpenedImageView = imageView2;
+    } else {
+      success = [imageView1 loadFile:[panel filename]];
+      self.lastOpenedImageView = imageView1;
+    }
+    if(success) {
+      [self mergeAction:sender];
+    }
 	}
 }
 
@@ -90,6 +100,13 @@
 - (IBAction) windowClose:sender {
 //	[aboutWindow setDelegate:nil];
 	[NSApp terminate:self];
+}
+
+- (void)dealloc
+{
+  [_lastOpenedImageView release];
+  
+  [super dealloc];
 }
 
 @end

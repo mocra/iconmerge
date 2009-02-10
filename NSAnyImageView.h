@@ -10,7 +10,7 @@
 
 @interface NSAnyImageView : NSImageView {
 	bool dragAcceptedByParent;
-	NSImage* firstImage;
+	NSImage* image;
 }
 
 - (bool) clear;

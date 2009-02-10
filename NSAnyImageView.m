@@ -11,10 +11,9 @@
 @implementation NSAnyImageView
 
 - (id)initWithFrame:(NSRect)frame {
-    self = [super initWithFrame:frame];
-    if (self) {
-    }
-    return self;
+  if (self = [super initWithFrame:frame]) {
+  }
+  return self;
 }
 
 //- (void)drawRect:(NSRect)rect {
@@ -22,8 +21,8 @@
 //}
 
 - (void) unclearIfPossible {
-	if( firstImage == nil ) {
-		firstImage = [self image];
+	if( image == nil ) {
+		image = [self image];
 	}
 }
 
@@ -119,7 +118,7 @@
 }
 
 - (bool) clear {
-	return firstImage == nil || firstImage == [self image];
+	return image == nil || image == [self image];
 }
 
 @end
