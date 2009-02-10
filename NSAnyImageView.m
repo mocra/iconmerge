@@ -16,10 +16,6 @@
   return self;
 }
 
-//- (void)drawRect:(NSRect)rect {
-    // Drawing code here.
-//}
-
 - (void) unclearIfPossible {
 	if( image == nil ) {
 		image = [self image];
@@ -36,24 +32,10 @@
   if ((NSDragOperationCopy & [sender draggingSourceOperationMask]) == NSDragOperationCopy) {
 		dragAcceptedByParent = NO;
 		return [[NSArray arrayWithObjects: NSFilenamesPboardType, nil] count] == 1 ? NSDragOperationCopy : NSDragOperationNone;
-		
-		
-    
-		//NSArray* dataOfDND = [[sender draggingPasteboard] dataForType:NSFilenamesPboarfile://localhost/Volumes/KINGSTON/Archive.zipdType];
-		//if( [dataOfDND count] != 1 ) {
-		//	return NSDragOperationNone;
-		//}
-		//NSString* filename = [dataOfDND objectAtIndex:1];
-		
-		//		if( dataOfDND != nil ) {
-//			for( NSString* files in dataOfDND ) {
-//			}
-//		}
 	}
-    else
-    {
-        return NSDragOperationNone;
-    }
+  else {
+    return NSDragOperationNone;
+  }
 }
 
 - (BOOL)performDragOperation:(id <NSDraggingInfo>)sender
