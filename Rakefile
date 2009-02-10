@@ -10,8 +10,10 @@ ChocTop.new do |s|
   s.remote_dir = '/opt/apps/mocra/shared/project_downloads/iconmerge'
 
   # Custom DMG
-  # s.background_file = "background.jpg"
-  # s.app_icon_position = [100, 90]
-  # s.applications_icon_position =  [400, 90]
-  # s.volume_icon = "dmg.icns"
+  s.background_file = "dmgbackground.png"
+  s.app_icon_position = [150, 160]
+  s.applications_icon_position =  [469, 160]
+  s.icon_text_size = 14
+  s.applications_icon =  "appicon.icns"
+  s.volume_icon = "dmgicon.icns"
 end
