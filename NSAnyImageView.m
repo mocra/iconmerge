@@ -67,7 +67,6 @@
 	if( [self loadFile:[fileArray objectAtIndex:0] tryImage:NO] ) {
 		[self setNeedsDisplay:YES];
 		[self sendAction:super.action to:super.target];
-		[[NSNotificationCenter defaultCenter]postNotificationName:NSAnyImageViewDraggedImage object:self];
     return YES;
 	}
 	return NO;
@@ -92,6 +91,7 @@
 		return NO;
 	}
 	self.image = newImage;
+  [[NSNotificationCenter defaultCenter]postNotificationName:NSAnyImageViewDraggedImage object:self];
 	return YES;
 }
 
