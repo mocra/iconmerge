@@ -16,6 +16,10 @@
 
 @synthesize lastOpenedImageView=_lastOpenedImageView;
 
+- (void)awakeFromNib {
+  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setLastOpenedImage:) name:NSAnyImageViewDraggedImage object:nil];
+}
+
 - (IBAction) swapAction:sender {
 	NSImage* image = imageView1.image;
 	imageView1.image = imageView2.image;
@@ -54,15 +58,20 @@
     BOOL success = FALSE;
     if (self.lastOpenedImageView == imageView1) {
       success = [imageView2 loadFile:[panel filename]];
-      self.lastOpenedImageView = imageView2;
+      //self.lastOpenedImageView = imageView2;
     } else {
       success = [imageView1 loadFile:[panel filename]];
-      self.lastOpenedImageView = imageView1;
+      //self.lastOpenedImageView = imageView1;
     }
     if(success) {
       [self mergeAction:sender];
     }
 	}
+}
+
+- (void)setLastOpenedImage:(id)sender
+{
+  self.lastOpenedImageView = [sender object];
 }
 
 - (IBAction) saveAction:sender {

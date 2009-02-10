@@ -38,6 +38,7 @@
 		return [[NSArray arrayWithObjects: NSFilenamesPboardType, nil] count] == 1 ? NSDragOperationCopy : NSDragOperationNone;
 		
 		
+    
 		//NSArray* dataOfDND = [[sender draggingPasteboard] dataForType:NSFilenamesPboarfile://localhost/Volumes/KINGSTON/Archive.zipdType];
 		//if( [dataOfDND count] != 1 ) {
 		//	return NSDragOperationNone;
@@ -84,7 +85,8 @@
 	if( [self loadFile:[fileArray objectAtIndex:0] tryImage:NO] ) {
 		[self setNeedsDisplay:YES];
 		[self sendAction:super.action to:super.target];
-		return YES;
+		[[NSNotificationCenter defaultCenter]postNotificationName:NSAnyImageViewDraggedImage object:self];
+    return YES;
 	}
 	return NO;
 	

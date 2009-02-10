@@ -30,4 +30,6 @@
 
 @property (nonatomic, retain) NSAnyImageView *lastOpenedImageView;
 
+- (void)setLastOpenedImage:(id)sender;
+
 @end
