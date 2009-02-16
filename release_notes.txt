@@ -1,3 +1,11 @@
+h1. <span>2009-02-10</span> Release 1.0.0
+
+h2. Brand new UI look
+
+<div class="thumbnail"><a href="http://skitch.com/drnic/br4ha/iconmerge-new-ui-for-default-look"><img src="http://img.skitch.com/20090216-3fr6ut8pw19rf4ubrqcx9t216.preview.jpg" alt="iConMerge new UI for default look" /></a></div>
+
+Thanks to Anthony Mittaz we now have a sexy new UI. The drop zones have dotted borders and there is a toolbar for open + save/export.
+
 h1. <span>2009-02-10</span> Release 0.9.1
 
 h2. Merge activated on all forms of assigning object

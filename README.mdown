@@ -17,8 +17,9 @@ thumbnail. That way you could tell what each Xcode project was for by its thumbn
 ## Authors
 
 * Daniel Leping, oneclickdev on elance.com
-* [Dr Nic Williams](http://drnicwilliams.com)
+* [Dr Nic Williams](http://drnicwilliams.com), Mocra
 * Jacob Zinman-Jeanes - design of logos, DMG backgrounds etc
+* Anthony Mittaz, Mocra
 
 ## Sponsored by
 
