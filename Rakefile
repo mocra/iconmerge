@@ -5,8 +5,6 @@ require "choctop"
 
 ChocTop.new do |s|
   # Remote upload target
-  s.host     = 'mocra.com'
-  s.base_url   = "http://#{s.host}/project_downloads/iconmerge"
   s.remote_dir = '/opt/apps/mocra/shared/project_downloads/iconmerge'
 
   # Custom DMG
