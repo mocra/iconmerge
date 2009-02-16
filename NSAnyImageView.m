@@ -8,6 +8,8 @@
 
 #import "NSAnyImageView.h"
 
+#define dashes_offset 3.0
+
 @implementation NSAnyImageView
 
 - (id)initWithFrame:(NSRect)frame {
@@ -20,6 +22,18 @@
 	if( image == nil ) {
 		image = [self image];
 	}
+}
+
+- (void)drawRect:(NSRect)rect
+{
+	NSBezierPath *path = [NSBezierPath bezierPathWithRoundedRect:NSMakeRect(self.bounds.origin.x + dashes_offset, self.bounds.origin.y + dashes_offset, self.bounds.size.width - (dashes_offset * 2.0), self.bounds.size.height - (dashes_offset * 2.0)) xRadius:15.0 yRadius:15.0];
+	CGFloat pattern[2] = { 7.0, 3.0 };
+	[path setLineDash:pattern count:1 phase:0.0];
+	[path setLineWidth:2.0];
+	[[NSColor darkGrayColor] set];
+	[path stroke];
+	
+	[super drawRect:rect];
 }
 
 - (NSDragOperation)draggingEntered:(id <NSDraggingInfo>)sender
