@@ -14,6 +14,7 @@
 		31D8628F0F404F2F0006B202 /* release_notes_template.html.erb in Resources */ = {isa = PBXBuildFile; fileRef = 31D8628C0F404F2F0006B202 /* release_notes_template.html.erb */; };
 		31D862910F404FAF0006B202 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 31D862900F404FAF0006B202 /* dsa_pub.pem */; };
 		3AA4E2920F48E72D00B2F3B0 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA4E2910F48E72D00B2F3B0 /* Sparkle.framework */; };
+		3AA4E2C50F48E7A800B2F3B0 /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA4E2910F48E72D00B2F3B0 /* Sparkle.framework */; };
 		650762140F3622B3000CD13A /* NSAnyImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 650762130F3622B3000CD13A /* NSAnyImageView.m */; };
 		650762180F362317000CD13A /* NSMainMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650762170F362317000CD13A /* NSMainMenuController.m */; };
 		65DB35540F3915A3000BAE44 /* IconFamily.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DB35530F3915A3000BAE44 /* IconFamily.m */; };
@@ -33,6 +34,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				3AA4E2C50F48E7A800B2F3B0 /* Sparkle.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
