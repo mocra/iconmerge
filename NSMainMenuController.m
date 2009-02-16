@@ -77,7 +77,7 @@
 - (IBAction) saveAction:sender {
 	BOOL result;
 	NSString* filename;
-	if( sender == menuItemSaveICNS ) {
+	if([sender tag] == SaveItem) {
 		NSSavePanel* panel = [NSSavePanel savePanel];
 		[panel setRequiredFileType:@"icns"];
 		if( result = [panel runModal] == NSOKButton ) {
@@ -93,7 +93,7 @@
 	}
 	if( result ) {
 		NSImage* image = [imageView3 image];
-		if( sender == menuItemSaveICNS ) {
+		if([sender tag] == SaveItem) {
 			NSData* data = [image TIFFRepresentation];
 			IconFamily* iconFamily = [IconFamily iconFamilyWithThumbnailsOfImage:[[NSImage alloc] initWithData:data]];
 			result = [iconFamily writeToFile:filename];

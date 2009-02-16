@@ -16,8 +16,6 @@
 	
 	IBOutlet NSMenuItem* menuItemOpenMain;
 	IBOutlet NSMenuItem* menuItemOpenOverlay;
-	IBOutlet NSMenuItem* menuItemSaveICNS;
-	IBOutlet NSMenuItem* menuItemSaveCI;
 
 	NSAnyImageView* _lastOpenedImageView;
 }

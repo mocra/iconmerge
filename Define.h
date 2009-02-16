@@ -7,4 +7,8 @@
  *
  */
 
+// Any Image View notifications
 #define NSAnyImageViewDraggedImage @"NSAnyImageViewDraggedImage"
+// Toolbar and Menu items
+#define SaveItem 100
+#define ExportItem 200

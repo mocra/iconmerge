@@ -8,6 +8,9 @@
 
 #import "NSAnyImageView.h"
 
+#define dashes_offset 3.0
+#define text_offset 10.0
+
 @implementation NSAnyImageView
 
 - (id)initWithFrame:(NSRect)frame {
@@ -20,6 +23,47 @@
 	if( image == nil ) {
 		image = [self image];
 	}
+}
+
+- (void)drawRect:(NSRect)rect
+{
+	if (![self image]) {
+		// Rect to draw
+		NSRect rectToDraw = NSMakeRect(self.bounds.origin.x + dashes_offset, self.bounds.origin.y + dashes_offset, self.bounds.size.width - (dashes_offset * 2.0), self.bounds.size.height - (dashes_offset * 2.0));
+		
+		// Dotted Lines
+		NSBezierPath *path = [NSBezierPath bezierPathWithRoundedRect:rectToDraw xRadius:15.0 yRadius:15.0];
+		CGFloat pattern[2] = { 7.0, 3.0 };
+		[path setLineDash:pattern count:1 phase:0.0];
+		[path setLineWidth:2.0];
+		[[NSColor darkGrayColor] set];
+		[path stroke];
+		
+		// Empty text
+		NSString *emptyText = @"Drag Any File Here";
+		// Attributes
+		NSColor *textColor = [NSColor darkGrayColor];
+		// Truncate the end of the text
+		NSMutableParagraphStyle *endTruncationParagraphStyle = [[[NSMutableParagraphStyle alloc] init] autorelease];
+		[endTruncationParagraphStyle setParagraphStyle:[NSParagraphStyle defaultParagraphStyle]];
+		[endTruncationParagraphStyle setLineBreakMode:NSLineBreakByWordWrapping];
+		[endTruncationParagraphStyle setAlignment:NSCenterTextAlignment];
+		
+		NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:
+							   [NSFont boldSystemFontOfSize:16.0], NSFontAttributeName,
+							   textColor, NSForegroundColorAttributeName, 
+							   endTruncationParagraphStyle, NSParagraphStyleAttributeName,
+							   [NSColor redColor], NSForegroundColorAttributeName,
+							   [NSCursor pointingHandCursor], NSCursorAttributeName,
+							   nil];
+		
+		NSSize sizeOfString = [emptyText sizeWithAttributes:attributes];
+		
+		
+		[emptyText drawInRect:NSMakeRect(rectToDraw.origin.x + text_offset, rectToDraw.origin.y - (rectToDraw.size.height - sizeOfString.height - sizeOfString.height)/2.0 , rectToDraw.size.width - (text_offset * 2.0), rectToDraw.size.height) withAttributes:attributes];
+	}
+	
+	[super drawRect:rect];
 }
 
 - (NSDragOperation)draggingEntered:(id <NSDraggingInfo>)sender
