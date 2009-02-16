@@ -30,9 +30,6 @@
 - (IBAction) mergeAction:sender {
 	int part = 2;
 	int rate = 5;
-	if( [imageView1 clear] || [imageView2 clear] ) {
-		return;
-	}
 	NSImage* image1 = [imageView1 image];
 	NSImage* image2 = [imageView2 image];
 	NSSize size1 = [image1 size];
@@ -72,6 +69,7 @@
 - (void)setLastOpenedImage:(id)sender
 {
   self.lastOpenedImageView = [sender object];
+  [self mergeAction:sender];
 }
 
 - (IBAction) saveAction:sender {
