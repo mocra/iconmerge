@@ -5,7 +5,7 @@ require "choctop"
 
 ChocTop.new do |s|
   # Remote upload target
-  s.remote_dir = '/opt/apps/mocra/shared/project_downloads/iconmerge'
+  s.remote_dir = '/var/www/mocra/project_downloads/iconmerge'
 
   # Custom DMG
   s.background_file = "dmgbackground.png"
